@@ -3,44 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Mr Abrarr's world — connect with me on Instagram and Snapchat.">
-<title>Mr Abrarr's World</title>
+<title>Welcome to Abrar's World</title>
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#02040a;color:white;font-family:Georgia,serif;overflow-x:hidden}
-#space{position:fixed;inset:0;width:100%;height:100%;z-index:-3;background:#02040a}.shade{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle,rgba(25,55,110,.18),transparent 48%),linear-gradient(#0002,#0009)}
-.meteor{position:fixed;width:150px;height:2px;background:linear-gradient(90deg,transparent,#fff,#75baff);box-shadow:0 0 12px #fff,0 0 25px #58aaff;opacity:0;z-index:-1;transform:rotate(-32deg)}
-@keyframes meteor{0%{opacity:0;transform:translate(0,0) rotate(-32deg)}10%{opacity:1}70%{opacity:1}100%{opacity:0;transform:translate(-430px,300px) rotate(-32deg)}}
-section{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px}
-.inner{animation:up 1.2s ease}.kicker,.tag,.scroll,.enter,.label,.sub,.footer{font-family:Arial,sans-serif}
-.kicker{font-size:13px;letter-spacing:7px;opacity:.8}.welcome h1{font-size:clamp(42px,10vw,78px);font-weight:400}.welcome h1 span,.main h2 span{color:#91baff}
-.line{width:150px;height:1px;margin:25px auto;background:#9bc8ff;box-shadow:0 0 14px #70aaff}
-.enter{display:inline-block;padding:15px 40px;border:1px solid #66b6ff;border-radius:99px;color:#fff;text-decoration:none;font-size:12px;letter-spacing:4px;transition:.3s}.enter:hover{transform:translateY(-3px);box-shadow:0 0 30px #438fff55}
-.scroll{position:absolute;bottom:22px;font-size:10px;letter-spacing:4px;opacity:.6}.arrow{display:block;width:11px;height:11px;margin:10px auto;border-right:2px solid white;border-bottom:2px solid white;transform:rotate(45deg);animation:bounce 1.5s infinite}
-.main{padding-top:30px}.card{width:min(720px,100%)}.brand{font-style:italic;font-size:25px;color:#b9d5ff;text-shadow:0 0 15px #70aaff;margin-bottom:60px}.main h2{font-size:clamp(42px,9vw,72px);font-weight:400;margin:0}.tag{font-size:11px;letter-spacing:6px;opacity:.7;margin-top:18px}
-.links{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}.link{padding:25px 22px;text-align:left;text-decoration:none;color:white;border:1px solid #bcd4ff45;border-radius:22px;background:#0a122666;backdrop-filter:blur(12px);transition:.35s}.link:hover{transform:translateY(-7px);border-color:#8ec5ff;box-shadow:0 12px 45px #4696ff40}.icon{font:28px Arial;display:block;margin-bottom:12px}.label{font-weight:bold;font-size:12px;letter-spacing:3px}.sub{font-size:12px;opacity:.6;margin-top:7px}.footer{margin-top:55px;font-size:11px;opacity:.5}
-@keyframes up{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}@keyframes bounce{50%{transform:rotate(45deg) translate(5px,5px)}}
-@media(max-width:600px){.links{grid-template-columns:1fr}.brand{margin-bottom:45px}.welcome h1{font-size:44px}.kicker{letter-spacing:4px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#020307;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:-5;background:#020307}
+body:after{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;background:radial-gradient(circle at 50% 35%,#17223833,transparent 55%),radial-gradient(circle at 10% 80%,#7d001822,transparent 35%)}
+.web{position:fixed;width:270px;height:270px;border-radius:50%;z-index:-2;opacity:.25;pointer-events:none;background:repeating-radial-gradient(circle,transparent 0 20px,#b8c6e955 21px 22px);clip-path:polygon(50% 0,58% 30%,82% 8%,68% 37%,100% 50%,68% 58%,88% 88%,58% 68%,50% 100%,40% 68%,10% 90%,32% 58%,0 50%,32% 38%,10% 10%,40% 30%);animation:pulse 5s infinite}
+.w1{top:-70px;left:-70px}.w2{right:-80px;bottom:-80px}.w3{right:-150px;top:25%;transform:scale(.65)}
+@keyframes pulse{50%{opacity:.42;transform:scale(1.05)}}
+.fog{position:fixed;width:60vw;height:25vh;border-radius:50%;filter:blur(35px);opacity:.13;z-index:-1;background:#b7c6d8;animation:fog 11s ease-in-out infinite alternate}
+.f1{left:-20%;top:35%}.f2{right:-20%;bottom:15%;animation-delay:-5s}@keyframes fog{to{transform:translate(25vw,-5vh) scale(1.2)}}
+.wrap{width:min(720px,92%);margin:auto;text-align:center}.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.k{font-size:13px;letter-spacing:8px;color:#aeb8ca;margin-bottom:20px}.title{font:clamp(48px,13vw,92px)/.95 Georgia,serif;letter-spacing:-3px}.title span{display:block;background:linear-gradient(90deg,#eee,#93aaff,#eee);-webkit-background-clip:text;color:transparent}
+.enter{margin-top:42px;width:245px;height:58px;border:1px solid #8fa8ff;border-radius:40px;display:grid;place-items:center;color:#fff;text-decoration:none;letter-spacing:5px;font-size:13px;background:#070b1488;box-shadow:0 0 25px #7894ff22;transition:.3s}.enter:hover{transform:translateY(-4px);box-shadow:0 0 35px #7894ff55}
+.quote{margin-top:32px;width:min(560px,100%);padding:18px;border:1px solid #8da2cc44;border-radius:18px;background:#05081288}.quote b{color:#91a9ff;font-weight:normal}.line{height:1px;background:#91a9ff;width:0;margin:14px auto 0;animation:grow 4s linear infinite}@keyframes grow{to{width:100%}}
+.scroll{margin-top:48px;color:#7f899c;font-size:10px;letter-spacing:7px;animation:bob 1.8s infinite}.arrow{font-size:26px;margin-top:7px}@keyframes bob{50%{transform:translateY(8px)}}
+.social{padding:70px 0 45px}.st{font-size:12px;letter-spacing:7px;color:#b7bfd0;margin-bottom:28px}.cards{display:grid;gap:16px}
+.card{position:relative;overflow:hidden;display:flex;align-items:center;gap:18px;padding:21px 23px;text-align:left;border:1px solid #8297d066;border-radius:22px;background:#060a14c9;color:#fff;text-decoration:none;transition:.35s}.card:hover{transform:translateY(-5px);border-color:#91aaff;box-shadow:0 0 30px #7894ff2b}
+.icon{width:50px;height:50px;display:grid;place-items:center;border-radius:15px;background:#090d17;border:1px solid #687aa7;font-size:25px}.name{font-weight:700;letter-spacing:3px;font-size:15px}.desc{color:#9299aa;margin-top:5px;font-size:13px}.go{margin-left:auto;color:#9db1ff;font-size:25px}.foot{padding:30px 0;color:#687083;font-size:12px}
+.spider{position:fixed;width:35px;height:28px;z-index:4;pointer-events:none;filter:drop-shadow(0 0 7px #8fa8ff88);animation:move var(--d) ease-in-out forwards}
+.spider:before{content:"";position:absolute;left:12px;top:7px;width:11px;height:12px;border-radius:50%;background:#08090d;border:1px solid #9aabc9}
+.spider:after{content:"";position:absolute;inset:0;background:linear-gradient(25deg,transparent 47%,#9aabc9 49% 51%,transparent 53%),linear-gradient(-25deg,transparent 47%,#9aabc9 49% 51%,transparent 53%),linear-gradient(65deg,transparent 47%,#9aabc9 49% 51%,transparent 53%),linear-gradient(-65deg,transparent 47%,#9aabc9 49% 51%,transparent 53%)}
+@keyframes move{0%{transform:translate(-10vw,-10vh) rotate(0) scale(.5);opacity:0}12%{opacity:1}50%{transform:translate(45vw,45vh) rotate(180deg) scale(1)}100%{transform:translate(110vw,95vh) rotate(360deg) scale(.45);opacity:0}}
+.meteor{position:fixed;width:4px;height:4px;border-radius:50%;background:#fff;box-shadow:0 0 12px 4px #91aaff,0 0 30px #7894ff66;z-index:3;animation:meteor 1.1s linear forwards}
+@keyframes meteor{from{transform:translate(-10vw,-10vh);opacity:0}15%{opacity:1}to{transform:translate(115vw,85vh);opacity:0}}
+.flash{position:fixed;inset:0;z-index:2;background:radial-gradient(circle,#a9bcff22,transparent 55%);pointer-events:none;animation:flash .45s forwards}@keyframes flash{to{opacity:0}}
+@media(max-width:520px){.wrap{width:92%}.k{letter-spacing:6px}.card{padding:18px}.social{padding-top:50px}}
 </style>
 </head>
 <body>
-<canvas id="space"></canvas><div class="shade"></div><div class="meteor" id="meteor"></div>
-<section class="welcome">
-<div class="inner"><div class="kicker">WELCOME TO</div><h1>Mr Abrar's world 🌎</h1><div class="line"></div><a class="enter" href="#world">ENTER WORLD</a></div>
-<div class="scroll">SCROLL DOWN<div class="arrow"></div></div>
+<canvas id="bg"></canvas><div class="web w1"></div><div class="web w2"></div><div class="web w3"></div><div class="fog f1"></div><div class="fog f2"></div>
+<main class="wrap">
+<section class="hero">
+<div class="k">WELCOME TO</div>
+<div class="title">Abrar's <span>World</span></div>
+<a class="enter" href="#social">ENTER WORLD</a>
+<div class="quote"><div><b>Yesterday</b> you said <b>Tomorrow</b></div><div class="line"></div></div>
+<div class="scroll">SCROLL DOWN<div class="arrow">⌄</div></div>
 </section>
-<section class="main" id="world"><div class="card">
-<div class="brand">Mr Abrarr</div><h2>Mr Abrarr's <span>world</span></h2><div class="tag">EXPLORE · CONNECT · DISCOVER</div>
-<div class="links">
-<a class="link" href="https://www.instagram.com/abrarrr.xx" target="_blank" rel="noopener"><span class="icon">◎</span><span class="label">INSTAGRAM</span><div class="sub">Connect with me</div></a>
-<a class="link" href="https://www.snapchat.com/add/theyhates.sahil" target="_blank" rel="noopener"><span class="icon">◉</span><span class="label">SNAPCHAT</span><div class="sub">Let's snap</div></a>
-</div><div class="footer">© 2026 Mr Abrarr's World</div>
-</div></section>
+<section class="social" id="social">
+<div class="st">MY SOCIAL LINKS</div>
+<div class="cards">
+<a class="card" href="https://www.instagram.com/abrarrr.xx" target="_blank" rel="noopener"><div class="icon">◎</div><div><div class="name">INSTAGRAM</div><div class="desc">Connect with me</div></div><div class="go">→</div></a>
+<a class="card" href="https://www.snapchat.com/add/theyhates.sahil" target="_blank" rel="noopener"><div class="icon">👻</div><div><div class="name">SNAPCHAT</div><div class="desc">Let's snap</div></div><div class="go">→</div></a>
+<a class="card" href="mailto:imabrarr1@gmail.com"><div class="icon">✉</div><div><div class="name">EMAIL</div><div class="desc">imabrarr1@gmail.com</div></div><div class="go">→</div></a>
+</div><div class="foot">© 2026 Abrar's World</div>
+</section>
+</main>
 <script>
-const c=document.getElementById('space'),x=c.getContext('2d');let w,h,s=[];
-function size(){w=c.width=innerWidth*devicePixelRatio;h=c.height=innerHeight*devicePixelRatio;s=Array.from({length:Math.min(240,Math.floor(innerWidth/4))},()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.4+.2,a:Math.random()}))}
-function draw(){x.clearRect(0,0,w,h);s.forEach(q=>{q.a+=Math.random()>.5?.015:-.015;q.a=Math.max(.12,Math.min(1,q.a));x.beginPath();x.arc(q.x,q.y,q.r*devicePixelRatio,0,7);x.fillStyle="rgba(240,248,255,"+q.a+")";x.fill()});requestAnimationFrame(draw)}
-size();addEventListener("resize",size);draw();
-function meteor(){let m=document.getElementById("meteor");m.style.left=(15+Math.random()*75)+"vw";m.style.top=(5+Math.random()*25)+"vh";m.style.animation="none";void m.offsetWidth;m.style.animation="meteor 1.35s ease-out forwards"}
-setTimeout(meteor,1800);setInterval(meteor,3500);
+const c=document.getElementById('bg'),x=c.getContext('2d');let W,H,s=[];
+function size(){W=c.width=innerWidth*devicePixelRatio;H=c.height=innerHeight*devicePixelRatio;s=Array.from({length:Math.min(190,innerWidth/4)},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.4+.2,a:Math.random(),d:Math.random()*.018+.006}))}
+function draw(){x.clearRect(0,0,W,H);for(const q of s){q.a+=q.d;if(q.a>1||q.a<.15)q.d*=-1;x.globalAlpha=q.a;x.fillStyle='#cbd6ed';x.beginPath();x.arc(q.x,q.y,q.r*devicePixelRatio,0,7);x.fill()}x.globalAlpha=1;requestAnimationFrame(draw)}addEventListener('resize',size);size();draw();
+function spider(){let e=document.createElement('div');e.className='spider';e.style.left=(Math.random()*80-10)+'vw';e.style.top=(Math.random()*35-10)+'vh';e.style.setProperty('--d',(2.5+Math.random()*3)+'s');document.body.appendChild(e);setTimeout(()=>e.remove(),6000)}
+function meteor(){let e=document.createElement('div');e.className='meteor';e.style.left=(Math.random()*55-10)+'vw';e.style.top=(Math.random()*25-10)+'vh';document.body.appendChild(e);setTimeout(()=>e.remove(),1300)}
+function flash(){let e=document.createElement('div');e.className='flash';document.body.appendChild(e);setTimeout(()=>e.remove(),500)}
+setInterval(spider,1000);setInterval(meteor,3500);setInterval(flash,3500);for(let i=0;i<5;i++)setTimeout(spider,i*500);
 </script>
-</body></html>
+</body>
+</html>
